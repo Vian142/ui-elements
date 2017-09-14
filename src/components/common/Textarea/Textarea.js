@@ -1,0 +1,24 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+import React from 'react';
+import classnames from 'classnames';
+import styles from './styles.css';
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+function Textarea(props) {
+    const { label, placeholder } = props;
+    return <div className={classnames(styles.textareaContainer)}>
+        <label className={styles.label}>
+            {
+                label && <span className={styles.labelText}>{label}</span>
+            }
+            <textarea
+                className={styles.textarea}
+                placeholder={placeholder}/>
+        </label>
+    </div>
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+export default Textarea;
+///////////////////////////////////////////////////////////////////////////////////////////////////

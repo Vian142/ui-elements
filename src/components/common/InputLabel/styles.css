@@ -1,0 +1,74 @@
+/*/////////////////////////////////////////////////////////////////////////////*/
+@import '_vars.css';
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+.input-container {
+    padding-bottom: 5px;
+    display: block;
+    position: relative;
+}
+.label {
+    &-text {
+        display: block;
+        padding: 0 0 5px;
+        font-size: 14px;
+        font-family: "Source Sans Pro";
+        color: #7f8fa4;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+}
+.input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px 10px 15px;
+    border: 1px solid rgb(223, 227, 233);
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: rgba(53, 64, 82, 0.5);
+    line-height: 1;
+    &:focus {
+        color: rgb(53, 64, 82);
+        border-color: rgb(46, 162, 248);
+    }
+    &.success {
+        border-color: rgb(0, 219, 33);
+    }
+    &.error {
+        border-color: rgb(237, 28, 36);
+    }
+}
+
+.icon-result {
+    display: block;
+    position: absolute;
+    color: #ced0da;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 24px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+}
+.green {
+    color: rgb(0, 219, 33);
+}
+.red {
+    color: rgb(237, 28, 36);
+}
+.message {
+    padding: 7px 0 4px;
+    font-size: 12px;
+    font-family: "Source Sans Pro";
+    color: rgb(27, 185, 52);
+    line-height: 1.2;
+    text-align: left;
+    &-icon {
+        display: inline-block;
+        margin-right: 5px;
+    }
+  }
+  

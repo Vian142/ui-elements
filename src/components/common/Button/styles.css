@@ -1,0 +1,20 @@
+/*/////////////////////////////////////////////////////////////////////////////*/
+@import '_vars.css';
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+.button {
+    display: inline-block;
+    padding: 10px 14px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: "Source Sans Pro";
+    color: rgb(53, 64, 82);
+    line-height: 1.2;
+    text-align: center;
+    border: 1px solid rgb(206, 208, 218);
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    &:hover {
+        cursor: pointer;
+    }
+}
