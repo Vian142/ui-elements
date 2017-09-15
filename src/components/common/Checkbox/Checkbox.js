@@ -1,16 +1,22 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 import React from 'react';
-import Checkbox from '../common/Checkbox/Checkbox';
+import classnames from 'classnames';
 import styles from './styles.css';
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-function Main() {
-    return <div className={styles.mainWrapper}>
-        <Checkbox label='Checkbox'/>
+function Checkbox(props) {
+    const { label } = props;
+    return <div className={styles.containerCheckbox}>
+        <label className={styles.label}>
+            <input type="checkbox" className={styles.checkbox} />
+            <span className={styles.labelText}>
+                {label}
+            </span>
+        </label>
     </div>
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-export default Main;
+export default Checkbox;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
