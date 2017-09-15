@@ -7,11 +7,7 @@ import styles from './styles.css';
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 function Main() {
     return <div className={styles.mainWrapper}>
-        <Textarea label={'Label'} placeholder='Placeholder' />
-        <br />
-        <Button>
-            <i className={'fa fa-book'}/>
-        </Button>
+        Hello world
     </div>
 }
 

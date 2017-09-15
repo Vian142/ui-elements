@@ -7,14 +7,148 @@
     padding: 10px 14px;
     margin-bottom: 5px;
     font-size: 14px;
-    font-family: "Source Sans Pro";
+    font-family: "Source Sans Pro", sans-serif;
     color: rgb(53, 64, 82);
     line-height: 1.2;
     text-align: center;
     border: 1px solid rgb(206, 208, 218);
     border-radius: 4px;
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient( 90deg, rgb(242, 244, 247) 0%, rgb(254, 255, 255) 100%);
     &:hover {
         cursor: pointer;
+    }
+    &:focus {
+        outline-color: transparent;
+        background-image: linear-gradient( 90deg, rgb(236,239,244) 0%, rgb(255,255,255) 100%);
+    }
+    &:hover {
+        background-image: linear-gradient( 90deg, rgb(236,239,244) 0%, rgb(255,255,255) 100%);
+    }
+    &:active {
+        outline-color: transparent;
+        background-image: linear-gradient( 90deg, rgb(225,229,234) 0%, rgb(242,246,249) 100%);
+    }
+}
+/*------*/
+
+.green {
+    color: #ffffff;
+    background-image: linear-gradient( 90deg, rgb(52,170,68) 0%, rgb(57,181,74) 100%);
+    &:hover {
+        cursor: pointer;
+    }
+    &:focus {
+        outline-color: transparent;
+        background-image: linear-gradient( 90deg, rgb(30,147,11) 0%, rgb(30,157,9) 100%);
+    }
+    &:hover {
+        background-image: linear-gradient( 90deg, rgb(30,147,11) 0%, rgb(30,157,9) 100%);
+    }
+    &:active {
+        outline-color: transparent;
+        background-image: linear-gradient( 90deg, rgb(26,116,11) 0%, rgb(24,122,8) 100%);
+    }
+}
+/**/
+.blue {
+    color: #ffffff;
+    border-color: rgb(21, 133, 216);
+    background-image: linear-gradient( 90deg, rgb(25,145,235) 0%, rgb(44,160,247) 100%);
+    &:hover {
+        cursor: pointer;
+    }
+    &:focus {
+        outline-color: transparent;
+        background-image: linear-gradient( 90deg, rgb(33,132,208) 0%, rgb(21,132,215) 100%);
+    }
+    &:hover {
+        background-image: linear-gradient( 90deg, rgb(33,132,208) 0%, rgb(21,132,215) 100%);
+    }
+    &:active {
+        outline-color: transparent;
+        background-image: linear-gradient( 90deg, rgb(25,108,171) 0%, rgb(12,115,192) 100%);
+    }
+}
+  
+/**/
+.violet {
+    color: #ffffff;
+    border-color: rgb(95, 64, 193);
+    background-image: linear-gradient( 90deg, rgb(107,71,218) 0%, rgb(130,97,230) 100%);
+    &:hover {
+        cursor: pointer;
+    }
+    &:focus {
+        outline-color: transparent;
+        background-image: linear-gradient( 90deg, rgb(97,60,208) 0%, rgb(114,81,213) 100%);
+    }
+    &:hover {
+        background-image: linear-gradient( 90deg, rgb(97,60,208) 0%, rgb(114,81,213) 100%);
+    }
+    &:active {
+        outline-color: transparent;
+        background-image: linear-gradient( 90deg, rgb(86,50,196) 0%, rgb(113,78,220) 100%);
+    }
+}
+/**/
+
+.black {
+    color: #ffffff;
+    border-color: rgb(59, 73, 88);
+    background-image: linear-gradient( 90deg, rgb(59,72,87) 0%, rgb(81,96,114) 100%);
+    &:hover {
+        cursor: pointer;
+    }
+    &:focus {
+        outline-color: transparent;
+        background-image: linear-gradient( 90deg, rgb(48,61,76) 0%, rgb(65,80,97) 100%);
+    }
+    &:hover {
+        background-image: linear-gradient( 90deg, rgb(48,61,76) 0%, rgb(65,80,97) 100%);
+    }
+    &:active {
+        outline-color: transparent;
+        background-image: linear-gradient( 90deg, rgb(36,47,59) 0%, rgb(53,67,83) 100%);
+    }
+}
+/**/
+.orange {
+    color: #ffffff;
+    border-color: rgb(243, 106, 25);
+    background-image: linear-gradient( 90deg, rgb(247,109,28) 0%, rgb(247,151,28) 100%);
+    &:hover {
+        cursor: pointer;
+    }
+    &:focus {
+        outline-color: transparent;
+        background-image: linear-gradient( 90deg, rgb(234,98,17) 0%, rgb(240,146,26) 100%);
+    }
+    &:hover {
+        background-image: linear-gradient( 90deg, rgb(234,98,17) 0%, rgb(240,146,26) 100%);
+    }
+    &:active {
+        outline-color: transparent;
+        background-image: linear-gradient( 90deg, rgb(230,90,8) 0%, rgb(233,138,18) 100%);
+    }
+}
+  
+/**/
+.red {
+    border-color: rgb(219, 22, 30);
+    background-image: linear-gradient( 90deg, rgb(221,23,30) 0%, rgb(248,82,88) 100%);
+    color: #ffffff;
+    &:hover {
+        cursor: pointer;
+    }
+    &:focus {
+        outline-color: transparent;
+        background-image: linear-gradient( 90deg, rgb(209,23,30) 0%, rgb(241,76,82) 100%);
+    }
+    &:hover {
+        background-image: linear-gradient( 90deg, rgb(209,23,30) 0%, rgb(241,76,82) 100%);
+    }
+    &:active {
+        outline-color: transparent;
+        background-image: linear-gradient( 90deg, rgb(190,13,20) 0%, rgb(236,67,73) 100%);
     }
 }
