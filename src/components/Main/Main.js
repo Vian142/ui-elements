@@ -7,6 +7,8 @@ import styles from './styles.css';
 function Main() {
     return <div className={styles.mainWrapper}>
         <Checkbox label='Checkbox'/>
+        <Checkbox label='Checkbox'/>
+        
     </div>
 }
 
