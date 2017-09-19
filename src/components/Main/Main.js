@@ -1,14 +1,12 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 import React from 'react';
-import Checkbox from '../common/Checkbox/Checkbox';
+import RadioGroup from '../common/RadioGroup/RadioGroup';
 import styles from './styles.css';
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 function Main() {
     return <div className={styles.mainWrapper}>
-        <Checkbox label='Checkbox'/>
-        <Checkbox label='Checkbox'/>
-        
+        <RadioGroup/>
     </div>
 }
 

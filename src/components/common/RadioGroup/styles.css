@@ -1,0 +1,60 @@
+/*/////////////////////////////////////////////////////////////////////////////*/
+@import '_vars.css';
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+.container {
+    margin-bottom: 10px;
+}
+.radio {
+    display: none;
+}
+.label {
+    position: relative;
+    padding-left: 18px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    color: rgb(53, 64, 82);
+    line-height: 1.2;
+    font-weight: normal;
+    user-select: none;
+    &:after {
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        box-sizing: border-box;
+        content: '';
+        width: 13px;
+        height: 13px;
+        border: 1px solid rgb(206, 208, 218);
+        border-radius: 50%;
+        background-color: linear-gradient( 90deg, rgb(242,244,248) 1%, rgb(255,255,255) 100%);
+        z-index: 1;
+    }
+    &:before {
+        display: none;
+        position: absolute;
+        content: '';
+        line-height: 0px;
+        text-align: center;
+        top: 6px;
+        left: 6px;
+        box-sizing: border-box;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        z-index: 5;
+    }
+}
+
+.label-checked {
+    font-weight: bold;
+    &:before {
+        border-color: rgb(39, 170, 17);
+        background-image: linear-gradient( 0deg, rgb(41,179,17) 1%, rgb(87,216,65) 100%);
+    }
+    &:after {
+        display: block;
+    }
+}
