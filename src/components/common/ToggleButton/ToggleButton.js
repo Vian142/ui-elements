@@ -1,0 +1,23 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+import React from 'react';
+import createReactClass from 'create-react-class';
+import classnames from 'classnames';
+import styles from './styles.css';
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+function ToggleButton(props) {
+    const { text } = props;
+    return <div className={styles.container}>
+        <label className={styles.label}>
+            <input className={styles.checkbox} type='checkbox' />
+            <span className={classnames(styles.text, styles.element)}>
+                {text}
+            </span>
+        </label>
+        </div>
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+export default ToggleButton;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////

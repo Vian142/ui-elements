@@ -1,12 +1,12 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 import React from 'react';
-import RadioGroup from '../common/RadioGroup/RadioGroup';
+import ToggleButton from '../common/ToggleButton/ToggleButton';
 import styles from './styles.css';
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 function Main() {
     return <div className={styles.mainWrapper}>
-        <RadioGroup/>
+        <ToggleButton text='Label'/>
     </div>
 }
 

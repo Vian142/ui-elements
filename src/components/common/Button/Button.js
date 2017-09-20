@@ -37,7 +37,6 @@ function buttonColor(color) {
 function Button(props) {
     const { children, color, onClick } = props;
     const colotButton = buttonColor(color);
-    console.log(colotButton)
     return <button
         onClick={onClick}
         className={classnames(styles.button, colotButton)}>

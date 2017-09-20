@@ -1,0 +1,67 @@
+/*/////////////////////////////////////////////////////////////////////////////*/
+@import '_vars.css';
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+.container {
+    display: block;
+    padding-top: 1px;
+    padding-left: 1px;
+}
+.checkbox {
+    display: none;
+}
+.label {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    color: rgb(53, 64, 82);
+    line-height: 1.2;
+    font-weight: normal;
+    user-select: none;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.element {
+    &:before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 28px;
+        height: 16px;
+        border-radius: 10px;
+        background-color: #dfe1e5;
+        z-index: 1;
+        transition: all 0.3s ease;
+    }
+    &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        z-index: 5;
+        transition: all 0.2s ease;
+    }
+}
+.checkbox:checked {
+    & + .text {
+        font-weight: bold;
+    }
+    & + .element {
+        &:before {
+            background-color: #36af47;
+        }
+        &:after {
+            left: 14px;
+        }
+    }
+}
