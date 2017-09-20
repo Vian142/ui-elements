@@ -2,15 +2,20 @@
 @import '_vars.css';
 
 /*/////////////////////////////////////////////////////////////////////////////*/
-.container {
+.label-item {
+    display: block;
+    margin-top: 1px;
     margin-bottom: 10px;
+    position: relative;
+    padding-left: 18px;
+    &:hover {
+        cursor: pointer;
+    }
 }
 .radio {
     display: none;
 }
-.label {
-    position: relative;
-    padding-left: 18px;
+.text {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 14px;
     color: rgb(53, 64, 82);
@@ -47,14 +52,15 @@
         z-index: 5;
     }
 }
-
-.label-checked {
-    font-weight: bold;
-    &:before {
-        border-color: rgb(39, 170, 17);
-        background-image: linear-gradient( 0deg, rgb(41,179,17) 1%, rgb(87,216,65) 100%);
-    }
-    &:after {
-        display: block;
+.radio:checked {
+    & + .text{
+        font-weight: bold;
+        &:after {
+            border-color: rgb(39, 170, 17);
+            background-image: linear-gradient( 0deg, rgb(41,179,17) 1%, rgb(87,216,65) 100%);
+        }
+        &:before {
+            display: block;
+        }
     }
 }

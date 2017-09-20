@@ -7,11 +7,15 @@ import styles from './styles.css';
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 const RadioItem = createReactClass({
     render() {
-        return <label className={styles.label}>
+        const { name, text } = this.props;
+        return <label className={styles.labelItem}>
             <input
                 className={styles.radio}
-                type='radio'/>
-            <span>Label</span>
+                type='radio'
+                name={name}/>
+            <span className={styles.text}>
+                {text}
+            </span>
         </label>
     }
 });
@@ -20,7 +24,10 @@ const RadioItem = createReactClass({
 const RadioGroup = createReactClass({
     render() {
         return <div className={styles.container}>
-            <RadioItem />
+            <RadioItem name='group' text='Label1'/>
+            <RadioItem name='group' text='Label'/>
+            <RadioItem name='group' text='Label'/>
+            <RadioItem name='group' text='Label'/>
         </div>
     }
 });
